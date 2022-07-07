@@ -4,7 +4,6 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <ApplicationIcon>favicon.ico</ApplicationIcon>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 	<Version>1.0.0</Version>
 	<Authors>$(Authors)</Authors>
@@ -17,6 +16,8 @@
 	<RepositoryType>git</RepositoryType>
 	<PackageTags>kazoku, common, models</PackageTags>
 	<NeutralLanguage>en</NeutralLanguage>
+	<ApplicationIcon>favicon.ico</ApplicationIcon>
+	<NoWin32Manifest>true</NoWin32Manifest>
   </PropertyGroup>
 
   <ItemGroup>
