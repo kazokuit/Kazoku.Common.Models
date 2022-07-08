@@ -5,7 +5,7 @@ namespace Kazoku.Common.Models.Kazoku.Dev
     public class Project
     {
         [JsonProperty("id")]
-        public Guid Id { get; set; }
+        public Guid Id { get; private set; }
         
         [JsonProperty("name")]
         public string Name { get; set; } = string.Empty;
@@ -32,9 +32,9 @@ namespace Kazoku.Common.Models.Kazoku.Dev
         public DateTimeOffset? Deleted { get; set; }
 
         [JsonProperty("views")]
-        public long Views { get; set; } = 0;
+        public long Views { get; private set; } = 0;
 
         [JsonProperty("shares")]
-        public long Shares { get; set; } = 0;
+        public long Shares { get; private set; } = 0;
     }
 }
